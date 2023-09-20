@@ -1,7 +1,5 @@
 
 <script setup>
-
-
 const props = defineProps({
     guitarra: {
         type: Object,
@@ -10,10 +8,8 @@ const props = defineProps({
 })
 
 defineEmits(["agregarCarrito"])
-
-
-
 </script>
+
 <template>
     <div class="col-md-6 col-lg-4 my-4 row align-items-center">
         <div class="col-4">
