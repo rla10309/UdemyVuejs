@@ -1,5 +1,5 @@
 <script setup>
-defineEmits(["actualiar-paciente"])
+defineEmits(["actualiar-paciente", "eliminar-paciente"])
 defineProps({
     paciente: {
         type: Object,
@@ -52,7 +52,8 @@ defineProps({
                 @click="$emit('actualiar-paciente', paciente.id)">Editar</button>
 
             <button type="button"
-                class="block w-full py-2 px-10 bg-red-600 hover:bg-red-700 text-white font-bold uppercase rounded-lg">Eliminar</button>
+                class="block w-full py-2 px-10 bg-red-600 hover:bg-red-700 text-white font-bold uppercase rounded-lg"
+                @click="$emit('eliminar-paciente', paciente.id)">Eliminar</button>
         </div>
     </div>
 </template>
